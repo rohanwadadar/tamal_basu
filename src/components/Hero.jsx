@@ -98,7 +98,7 @@ export default function HeroAbout() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-2xl text-gray-600 font-light"
             >
-              Pioneering Sustainable Chemical Innovation
+              Leading Sustainable Chemical Innovation
             </motion.p>
 
             <motion.p
@@ -148,15 +148,15 @@ export default function HeroAbout() {
             >
               <div>
                 <div className="text-3xl font-bold text-teal-600">15+</div>
-                <div className="text-sm text-gray-600 mt-1">Years Teaching</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-teal-600">10+</div>
-                <div className="text-sm text-gray-600 mt-1">Publications</div>
+                <div className="text-sm text-gray-600 mt-1">Years of Teaching</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-600">5+</div>
-                <div className="text-sm text-gray-600 mt-1">Years Industrial</div>
+                <div className="text-sm text-gray-600 mt-1">Years of Industrial Experience</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-teal-600">10+</div>
+                <div className="text-sm text-gray-600 mt-1">Publications in International Repute Journals</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-600">1000+</div>
