@@ -20,17 +20,22 @@ export default function About() {
             About Dr. Tamal Basu
           </h2>
 
+          {/* UPDATED TEXT ONLY */}
           <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-            Dr. Tamal Basu is a distinguished academician and researcher with
-            expertise in <strong>polymer chemistry</strong>,{" "}
-            <strong>material science</strong>, and sustainable chemical
-            technologies.
+            Dr. Tamal Basu is a distinguished researcher and academician
+            specializing in <strong>polymer chemistry</strong>,{" "}
+            <strong>green chemistry</strong>, and{" "}
+            <strong>advanced material sciences</strong>. His pioneering work
+            focuses on developing sustainable chemical solutions that deliver
+            measurable real-world impact.
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            His work bridges scientific research with practical applications,
-            contributing to innovation in sustainable materials and advanced
-            chemical systems.
+           {/* UPDATED TEXT ONLY */}
+           <p className="mt-4 text-gray-700 leading-relaxed">
+            With a career spanning academia and industry, Dr. Basu has made
+            significant contributions to environmentally responsible materials,
+            functional bio-polymers, and innovative chemical systems that address
+            critical challenges in sustainability and performance.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
