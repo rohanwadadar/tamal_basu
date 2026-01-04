@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 const navItems = [
   { name: "About", link: "#about" },
   { name: "Education", link: "#education" },
-  { name: "Experiance", link: "#Experience" },
+  { name: "Experience ", link: "#Experience" },
   { name: "Publications", link: "#publications" },
   { name: "Contact", link: "#Contact" },
 ];
