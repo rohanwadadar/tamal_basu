@@ -1,131 +1,56 @@
-// import Navbar from "./components/Navbar";
-// // import Hero from "./components/Hero";
-// // import About from "./components/About";
-// import Experience from "./components/Experience";
-// import Research from "./components/Research";
-// //import Publications from "./components/Publications";
-// import HeroAbout from "./components/Hero";
-// import Contact from "./components/Contact";
-// import EducationRoadmap from "./components/education";
-
-// export default function App() {
-//   return (
-//     <div className="bg-white text-gray-800">
-
-//       {/* NAVBAR */}
-//       <Navbar />
-
-//       {/* HERO */}
-//       <section className="bg-gradient-to-br from-primary to-primaryDark text-white">
-//         <HeroAbout />
-//       </section>
-
-//       {/* EDUCATION */}
-//       <section className="bg-primaryLight">
-//         <EducationRoadmap />
-//       </section>
-
-//       {/* EXPERIENCE */}
-//       <section className="bg-white">
-//         <Experience />
-//       </section>
-
-//       {/* RESEARCH */}
-//       <section className="bg-primaryLight">
-//         <Research />
-//       </section>
-
-//       {/* PUBLICATIONS
-//       <section className="bg-white">
-//         <Publications />
-//       </section> */}
-
-//       {/* CONTACT */}
-//       <section className="bg-gradient-to-r from-primary to-primaryDark text-white">
-//         <Contact />
-//       </section>
-//     </div>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "./context/AuthContext";
-
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Roadmap from "./pages/Roadmap";
-import Admin from "./pages/Admin";
-import Profile from "./pages/Profile";
+// import Hero from "./components/Hero";
+// import About from "./components/About";
+import Experience from "./components/Experience";
+import Research from "./components/Research";
+//import Publications from "./components/Publications";
+import HeroAbout from "./components/Hero";
+import Contact from "./components/Contact";
+import EducationRoadmap from "./components/education";
 
-import ProtectedRoute from "./auth/ProtectedRoute";
-
-function App() {
+export default function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Navbar />
+    <div className="bg-white text-gray-800">
 
-        <main className="min-h-screen bg-gradient-to-br from-gray-950 via-slate-950 to-black text-white relative overflow-hidden">
-          {/* Subtle ambient glow effects */}
-          <div className="fixed inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-yellow-600/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
-          </div>
+      {/* NAVBAR */}
+      <Navbar />
 
-          {/* Subtle grid pattern overlay */}
-          <div className="fixed inset-0 pointer-events-none opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: `linear-gradient(rgba(234, 179, 8, 0.05) 1px, transparent 1px),
-                                linear-gradient(90deg, rgba(234, 179, 8, 0.05) 1px, transparent 1px)`,
-              backgroundSize: '50px 50px'
-            }}></div>
-          </div>
-          
-          {/* Content wrapper */}
-          <div className="relative z-10">
-            <Routes>
-              {/* Public */}
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/roadmap" element={<Roadmap />} />
+      {/* /* {/* HERO */}
+      {/* <section className="bg-gradient-to-br from-primary to-primaryDark text-white">
+        <HeroAbout />
+      </section> */}
 
-              {/* User */}
-              <Route
-                path="/profile"
-                element={
-                  <ProtectedRoute>
-                    <Profile />
-                  </ProtectedRoute>
-                }
-              />
+      {/* EDUCATION */}
+      {/* <section className="bg-primaryLight">
+        <EducationRoadmap />
+      </section> */}
 
-              {/* Admin */}
-              <Route
-                path="/admin"
-                element={
-                  <ProtectedRoute role="admin">
-                    <Admin />
-                  </ProtectedRoute>
-                }
-              />
-            </Routes>
-          </div>
-        </main>
-      </BrowserRouter>
-    </AuthProvider>
+      {/* EXPERIENCE */}
+      {/* <section className="bg-white">
+        <Experience /> */
+      </section> */} */}
+
+      {/* RESEARCH */}
+      {/* <section className="bg-primaryLight">
+        <Research />
+      </section> */}
+
+      {/* PUBLICATIONS
+      <section className="bg-white">
+        <Publications />
+      </section> */}
+
+      {/* CONTACT */}
+      <section className="bg-gradient-to-r from-primary to-primaryDark text-white">
+        <Contact />
+      </section>
+    </div>
   );
 }
 
-export default App;
+
+
+
+
+
+
